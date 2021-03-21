@@ -96,11 +96,15 @@ export default {
     },
     computed: {
         totalPrice(){
-            let total = 0;
-            for(let i of this.books){
-                total += i.price * i.buyCount
-            }
-            return total
+            // let total = 0;
+            // for(let i of this.books){
+            //     total += i.price * i.buyCount
+            // }
+            // return total
+
+            return this.books.reduce(function (preValue, book) {  
+                return preValue + book.price * book.buyCount
+            },0)
         }
     },
     filters: {
