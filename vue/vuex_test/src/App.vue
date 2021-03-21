@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <!-- <HelloWorld/> -->
     <!-- <p>{{ $store.state.name }}</p> -->
-    <Test/>
+    <ShoppingCart/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Test from './components/test'
-
+// import HelloWorld from './components/HelloWorld.vue'
+// import Test from './components/test'
+import ShoppingCart from './components/ShoppingCart'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Test
+    // HelloWorld,
+    // Test
+    ShoppingCart
   }
 }
 </script>
