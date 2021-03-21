@@ -97,8 +97,8 @@ export default {
     computed: {
         totalPrice(){
             let total = 0;
-            for(let i=0;i<this.books.length;i++){
-                total += this.books[i].price * this.books[i].buyCount
+            for(let i of this.books){
+                total += i.price * i.buyCount
             }
             return total
         }
