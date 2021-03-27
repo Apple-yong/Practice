@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Tabbar from './components/tabbar'
+import Tabbar from 'components/tabbar'
 export default {
   name: 'App',
   components: {
