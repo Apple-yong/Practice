@@ -7,8 +7,8 @@
       <!-- <router-link :to="'/user/'+id">User</router-link>
       <button @click="linkToHome">首页</button>
       <button @click="linkToAbout">关于</button> -->
+      <router-view />
     </div>
-    <router-view />
     <Tabbar :navConfig="navConfig"/>
   </div>
 </template>
